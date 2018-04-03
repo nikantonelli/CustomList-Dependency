@@ -25,7 +25,12 @@
         },
         _mergePortfolioItemType: function(typeDef, portfolioItemsByOrdinal) {
             var typePath = typeDef.TypePath.toLowerCase();
-            this.parentChildTypeMap[typePath] = [{typePath: typePath, collectionName: 'Predecessors', parentField: 'Successors'}];
+            this.parentChildTypeMap[typePath] = [
+                {typePath: typePath, collectionName: 'Predecessors', parentField: 'Successors'},
+                //There is a 'funny' in another bit of code that means I need to do this....
+                // I have to check in the sdk.js file to find where it is....
+                {typePath: 'testcase', collectionName: 'Predecessors', parentField: 'Successors'}
+                ];
         }
     });
 })();

@@ -36,10 +36,10 @@
             var typePath = typeDef.TypePath.toLowerCase();
             this.parentChildTypeMap[typePath] = [
                 {typePath: typePath, collectionName: 'Predecessors', parentField: 'Successors'},
-                //There is a 'funny' in another bit of code that goes away when I do this....
-                //I have yet to find where it is in the sdk.js file
-                {typePath: 'testcase', collectionName: 'Predecessors', parentField: 'Successors'},
-            ];
+                //There is a 'funny' in another bit of code that means I need to do this....
+                // I have to check in the sdk.js file to find where it is....
+                {typePath: 'testcase', collectionName: 'Predecessors', parentField: 'Successors'}
+                ];
         }
     });
 })();
