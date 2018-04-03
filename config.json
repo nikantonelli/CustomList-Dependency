@@ -1,0 +1,15 @@
+{
+    "name": "CustomDepList",
+    "className": "Niks.apps.CustomListApp",
+    "server": "https://rally1.rallydev.com",
+    "sdk": "2.1",
+    "javascript": [
+        "Mapper.js",
+        "TreeStore.js",
+        "Settings.js",
+        "App.js"
+],
+    "css": [
+        "app.css"
+    ]
+}
