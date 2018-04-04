@@ -9,7 +9,6 @@
         extend: 'Rally.data.wsapi.TreeStoreBuilder',
              
         loadModels: function(config) {
-            console.log('loading mapper');
             if (!config.mapper) {
                 config.mapper = Ext.create('Niks.apps.ParentChildMapper');
             }

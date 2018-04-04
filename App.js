@@ -28,7 +28,7 @@
         config: {
             defaultSettings: {
                 showControls: true,
-                type: 'UserStory'
+                type: 'UserStory, Defect'
             }
         },
 
