@@ -1,6 +1,14 @@
 (function() {
     var Ext = window.Ext4 || window.Ext;
 
+    Ext.define('Niks.Apps.TreeGridChildPager', {
+        override: 'Rally.ui.grid.plugin.TreeGridChildPager', 
+
+        _storeHasMoreChildPages: function(parentRecord) {
+            return false;
+        }
+    });
+    
     Ext.define('Niks.apps.CustomListApp', {
         extend: 'Rally.app.GridBoardApp',
         requires: [
