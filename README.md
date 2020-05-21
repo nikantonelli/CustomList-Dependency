@@ -2,7 +2,7 @@ CustomDepList
 =========================
 
 ## Overview
-
+Use Custom List App to show Predecessors as 'children' in the hierarchy
 
 ## License
 
